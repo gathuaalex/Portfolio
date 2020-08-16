@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+        <main>
+            <section class="intro-section">
+                <h2 class="section-title">Hello, {{b.profile.name}}!</h2>
+                <p><span style="font-weight: 50px;" >{{b.profile.description}}</span></p>
+                <a href="mailto:{{ b.profile.email }}" class="btn btn-primary btn-hire-me">HIRE ME</a>
+            </section>
+            <section class="resume-section">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6 class="section-subtitle">RESUME</h6>
+                        <h2 class="section-title">Experience</h2>
+                        <ul class="time-line">
+                            {% for exp in experience %}
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">{{exp.year_of_experience}}</span>
+                                <h6 class="time-line-item-title">{{exp.task}}</h6>
+                                <p class="time-line-item-subtitle">{{exp.company}}</p>
+                                <p class="time-line-item-content">{{exp.exp_short_descript}}</p>
+                                
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6 class="section-subtitle">RESUME</h6>
+                        <h2 class="section-title">EDUCATION</h2>
+                        <ul class="time-line">
+                            {% for edu in education %}
+                            <li class="time-line-item">
+                                <span class="badge badge-primary ">{{edu.year_of_study}}</span>
+                                <h6 class="time-line-item-title">{{edu.achievement}}</h6>
+                                <p class="time-line-item-subtitle">{{edu.university}}</p>
+                                <p class="time-line-item-content">{{edu.uni_short_descript}}</p>
+              
+                            </li>
+                              {% endfor %} 
+                        </ul>
+                    </div>
+                   
+                </div>
+            </section>
+          
+        <section class="services-section">
+            <h6 class="section-subtitle">WHAT I DO</h6>
+            <h2 class="section-title">SERVICES</h2>
+            <div class="row">
+                <div class="media service-card col-lg-6">
+                    <div class="service-icon">
+                        <img src="{% static 'assets/images/001-target.svg' %}" alt="target">
+                    </div>
+                    <div class="media-body">
+                        <h5 class="service-title">Web development</h5>
+                        <p class="service-description"></p>
+                    </div>
+                </div>
+        
+                <div class="media service-card col-lg-6">
+                    <div class="service-icon">
+                        <img src="{% static 'assets/images/002-development.svg' %}" alt="development">
+                    </div>
+                    <div class="media-body">
+                        <h5 class="service-title">Engineering</h5>
+                        <p class="service-description">
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+            <footer>Live Resume @ <a href="" target="_blank" rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
+        </main>
+    
+   {% endblock %}

@@ -1,0 +1,339 @@
+[33mcommit 2924e1c15cb750a16cd404da6f9b64612a381bd3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sun Aug 9 12:04:41 2020 +0300
+
+    initial commit
+
+[33mcommit 7d0e6b7d90fc7b0a93dffcca9b7677742f0609dd[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Tue Jun 23 17:05:59 2020 +0300
+
+    Update models.py
+
+[33mcommit 3e3dfadc07bc96c1763d105a3ba6c887e3f25397[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Tue Jun 23 16:57:40 2020 +0300
+
+    Update models.py
+
+[33mcommit 39aaaffefc06499498c4cc1904037e28ada2e691[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Tue Jun 23 15:28:43 2020 +0300
+
+    Update models.py
+
+[33mcommit 459636c823a87deaebac4c795a99cc123aac04a8[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Tue Jun 23 15:25:29 2020 +0300
+
+    Update models.py
+
+[33mcommit 566b2613a6294dded9ba7da163b1757076cf4872[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Tue Jun 23 15:21:20 2020 +0300
+
+    Delete python-app.yml
+
+[33mcommit c7db129eab5cdf2960d6a8c5e6f796b759f9f7b3[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Tue Jun 23 15:17:51 2020 +0300
+
+    Create python-app.yml
+    
+    first ci
+
+[33mcommit 41165c7375143559421bc3b9b5d4a54114805ee7[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Tue Jun 23 14:39:55 2020 +0300
+
+    Update models.py
+
+[33mcommit 01c47a5ab231c4c7b302393e106eda4832b8d6ca[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Tue Jun 23 13:43:40 2020 +0300
+
+    .
+
+[33mcommit b347a5218d1b61707c0e3590d3d85f21ceb2071f[m
+Merge: 7b916b5 476d922
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Tue Jun 23 10:53:33 2020 +0300
+
+    Merge branch 'master' of https://github.com/gathuaalex/portfolio
+
+[33mcommit 7b916b5f49980c014ba321111bdf9304866a4d6e[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Tue Jun 23 10:52:28 2020 +0300
+
+    .
+
+[33mcommit 476d922cc160ca8eacff81f2056f04927ba52307[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Mon Jun 22 23:29:46 2020 +0300
+
+    Update models.py
+
+[33mcommit ee4e93f585ff808ed809124bba259d936aa387ef[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Mon Jun 22 23:27:33 2020 +0300
+
+    Update models.py
+
+[33mcommit 517beec87fbd9f4792e1fce8c8dfb121b02b5075[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Mon Jun 22 22:48:34 2020 +0300
+
+    .
+
+[33mcommit 6d96959f27a54ea85b091f4e14bbe1582b136388[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Mon Jun 22 22:31:49 2020 +0300
+
+    cloudinary support
+
+[33mcommit c77c748505b1a4ef0b8a9d10f05a2083194a4456[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sun Jun 21 16:06:14 2020 +0300
+
+    .
+
+[33mcommit ad5b018026812f95acbe5711a9a09ea9cc6d4f91[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sun Jun 21 15:41:26 2020 +0300
+
+    Update settings.py
+
+[33mcommit bc73e2752eb5615988aabd1d32f48f6ceca98067[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sun Jun 21 15:35:27 2020 +0300
+
+    Update urls.py
+
+[33mcommit 5e9fa04f9b8e7186c10cf974d6ada526cbf7505e[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sun Jun 21 15:31:54 2020 +0300
+
+    .
+
+[33mcommit 6927f67c6926a318275aa1c56381742b2d8c2ea6[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sun Jun 21 15:24:44 2020 +0300
+
+    .
+
+[33mcommit 72136f874fd07afbcc925905c3cb6c5f232d57a5[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sun Jun 21 12:16:07 2020 +0300
+
+    .
+
+[33mcommit 03b8c84886ce6f89d3189a08e19c76cac8be237b[m
+Merge: 795e252 e67c4db
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sun Jun 21 11:30:50 2020 +0300
+
+    Merge branch 'master' of https://github.com/gathuaalex/portfolio
+
+[33mcommit 795e25250bab5e3191efbd9651b187e2c0565477[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sun Jun 21 11:30:28 2020 +0300
+
+    used debug propagate exceptions
+
+[33mcommit e67c4db91e21de995bcf979ff681c395a13dfb5c[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sat Jun 20 22:58:54 2020 +0300
+
+    Update settings.py
+
+[33mcommit dacf3ea373e300e665017e623bd4ee3b14299209[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sat Jun 20 22:38:05 2020 +0300
+
+    Rename procfile to Procfile
+
+[33mcommit ffce703e375747aaa39e5489d67985d260213ba4[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 22:34:00 2020 +0300
+
+    .
+
+[33mcommit ff00431b3df90d83371eed5573045cef0d61afba[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 22:19:25 2020 +0300
+
+    change database config
+
+[33mcommit 8375361e1d3201446bb2e5e7ac451d4b0c450c92[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 21:10:57 2020 +0300
+
+    added the host
+
+[33mcommit 43e9420c3cbf0903f922ccaf0261bc4e45c68ac6[m
+Merge: 6cbafe4 c98b4a8
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 20:55:04 2020 +0300
+
+    Merge branch 'master' of https://github.com/gathuaalex/portfolio
+
+[33mcommit 6cbafe444dbb254daa6fa8bafd9ff2ea506f53f5[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 20:54:15 2020 +0300
+
+    .
+
+[33mcommit c98b4a8a1530daaca85749ac0cce4a93a0a661b0[m
+Merge: f180ae0 e35c16a
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sat Jun 20 17:37:53 2020 +0300
+
+    Merge pull request #5 from gathuaalex/dependabot/pip/django-3.0.7
+    
+    Bump django from 3.0.6 to 3.0.7
+
+[33mcommit e35c16ac5de046db7f8c2020e9d6313300265a5b[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Sat Jun 20 14:09:04 2020 +0000
+
+    Bump django from 3.0.6 to 3.0.7
+    
+    Bumps [django](https://github.com/django/django) from 3.0.6 to 3.0.7.
+    - [Release notes](https://github.com/django/django/releases)
+    - [Commits](https://github.com/django/django/compare/3.0.6...3.0.7)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit f180ae0d20ad4cfe52f4e6451b678f8492e17a03[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 17:08:25 2020 +0300
+
+    .
+
+[33mcommit b4c874cc54c52267b65e690cfb6b729687f954b5[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 16:01:33 2020 +0300
+
+    ,
+
+[33mcommit f49657b1f37cd83518601cc94319cc135a754d3e[m
+Merge: 0a56beb 6e7d009
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 15:50:26 2020 +0300
+
+    Merge branch 'master' of https://github.com/gathuaalex/portfolio
+
+[33mcommit 0a56beb6caf668ebe4c70f10d5b08f573b912a9d[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 15:37:10 2020 +0300
+
+    additional files and changes for Heroku
+
+[33mcommit 6e7d0090a7de76ba74abd33acf9630c342e8f33b[m
+Merge: c649d4f 2d1c3bf
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sat Jun 20 15:11:41 2020 +0300
+
+    Merge pull request #4 from gathuaalex/dependabot/pip/django-3.0.7
+    
+    Bump django from 3.0.6 to 3.0.7
+
+[33mcommit 2d1c3bf80bb8e4a12575c4a8b155370b0e90ab68[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Sat Jun 20 12:03:17 2020 +0000
+
+    Bump django from 3.0.6 to 3.0.7
+    
+    Bumps [django](https://github.com/django/django) from 3.0.6 to 3.0.7.
+    - [Release notes](https://github.com/django/django/releases)
+    - [Commits](https://github.com/django/django/compare/3.0.6...3.0.7)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit c649d4f0bbf90be5e1a1d2d6eb9d8f0c9727ebae[m
+Merge: abf4f7c dccdc7a
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 15:02:36 2020 +0300
+
+    .
+
+[33mcommit abf4f7c5fcb5883cfd2d4567fc928c37cdae3e56[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 14:58:58 2020 +0300
+
+    .
+
+[33mcommit dccdc7a8e9edee543e95a97d324910adcbe6cfd1[m
+Merge: 64c332b daa1a86
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sat Jun 20 12:37:06 2020 +0300
+
+    Merge pull request #1 from gathuaalex/dependabot/pip/django-3.0.7
+    
+    Bump django from 3.0.6 to 3.0.7
+
+[33mcommit 64c332b11484e81c9e8ea3398b359541f7963011[m
+Merge: 711f013 1e22e8b
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sat Jun 20 12:36:50 2020 +0300
+
+    Merge pull request #2 from gathuaalex/dependabot/npm_and_yarn/static/jquery-3.5.0
+    
+    Bump jquery from 3.4.1 to 3.5.0 in /static
+
+[33mcommit 711f013d1d2c1dfd9d196e8cfa836de070279b11[m
+Merge: b90f6ea eca477f
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sat Jun 20 12:36:27 2020 +0300
+
+    Merge pull request #3 from gathuaalex/dependabot/npm_and_yarn/static/acorn-5.7.4
+    
+    Bump acorn from 5.7.3 to 5.7.4 in /static
+
+[33mcommit eca477f1035005941c441651a7fe2efd14939738[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Sat Jun 20 09:05:40 2020 +0000
+
+    Bump acorn from 5.7.3 to 5.7.4 in /static
+    
+    Bumps [acorn](https://github.com/acornjs/acorn) from 5.7.3 to 5.7.4.
+    - [Release notes](https://github.com/acornjs/acorn/releases)
+    - [Commits](https://github.com/acornjs/acorn/compare/5.7.3...5.7.4)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 1e22e8b5eba03ef19dd3a8c682cccb9aaec6c785[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Sat Jun 20 09:05:36 2020 +0000
+
+    Bump jquery from 3.4.1 to 3.5.0 in /static
+    
+    Bumps [jquery](https://github.com/jquery/jquery) from 3.4.1 to 3.5.0.
+    - [Release notes](https://github.com/jquery/jquery/releases)
+    - [Commits](https://github.com/jquery/jquery/compare/3.4.1...3.5.0)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit daa1a86c217d8ae321cbbb2651fc454b9c885200[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Sat Jun 20 09:05:35 2020 +0000
+
+    Bump django from 3.0.6 to 3.0.7
+    
+    Bumps [django](https://github.com/django/django) from 3.0.6 to 3.0.7.
+    - [Release notes](https://github.com/django/django/releases)
+    - [Commits](https://github.com/django/django/compare/3.0.6...3.0.7)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit b90f6ea45bfc8da7ca5ab91d9784d38b0306cde9[m
+Author: alex gathua <alexgathua3@gmail.com>
+Date:   Sat Jun 20 12:03:18 2020 +0300
+
+    .
+
+[33mcommit 533d20c701b69907782ff2887728a93b7a06f73d[m
+Author: Alex Gathua <64085923+gathuaalex@users.noreply.github.com>
+Date:   Sat Jun 20 11:37:37 2020 +0300
+
+    Initial commit
