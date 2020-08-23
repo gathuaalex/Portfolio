@@ -3,7 +3,9 @@ db.sqlite3
 env
 __pycache__
 local_settings.py
-.env
+folioenv
 *.jpg
 Scripts
 Lib
+my-manifest-directory
+.env
