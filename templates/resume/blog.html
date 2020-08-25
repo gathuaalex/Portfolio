@@ -1,77 +1,77 @@
 {% extends "base.html" %}
 {% load static %}
-{% block content %}
-        <main>
-            <section class="blog-section">
-                <h2 class="section-title">LATEST NEWS</h2>
+    {% block content %}
+            <main>
+                <section class="blog-section">
+                    <h2 class="section-title">LATEST NEWS</h2>
 
-                <div class="blog-posts-wrapper">
-                    {% for apost in posts %}
+                    <div class="blog-posts-wrapper">
+                        {% for apost in posts %}
 
-                    <article class="blog-post container">    
-                        
-                            <img src="{{apost.image.url}}" alt="news " class="blog-post-thumbnail"  >
-                            <a href="{% url 'blog_detail' apost.pk%}" class="blog-post-link">
-                            <h5 class="blog-post-title" style="color: blue;">{{ apost.title }}</h5>
-                         </a>
-                            <p>{{apost.body | slice:":200" }}
-                                <!--<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    Link with href
-                                </a>-->
-                          </p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                {{apost.body }}
-                            </div>
-                        </div>
-
-                       
-                        <p class="blog-post-meta">
-                            <span class="post-published-date">{{ apost.created_on }}</span>
-                            <a href="#!" class="post-comments" data-toggle="modal" data-target="#staticBackdrop" >{{apost.comments.count}} COMMENTS</a>
+                        <article class="blog-post container">    
                             
-                        </p> 
-                      
-                      
-                    </article>
-                    {% endfor %}
-                    <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
-                            aria-labelledby="staticBackdropLabel" aria-hidden="true" mr-2>
-                            <div class="modal-dialog modal-full-height modal-right modal-dialog-scrollable">
-                                <div class="modal-content"> 
-                                <div class="jumbotron card card-image">
-                                    <div class="modal-header">
-                                        
-                                        <h5 class="modal-title" id="staticBackdropLabel">Comments section</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                       
-                                        {% for comment in comments %}
-                                        <p>
-                                        
-                                            <small>
-                                                On {{comment.created_on.date }}&nbsp;
-                                                <b>{{ comment.author }}</b> commented:
-                                            </small>
-                                        </p>
-                                        <p>{{ comment.body }}</p>
-                                        <hr>
-                                        {% endfor %}
-                                        </div>
-                                    </div>
-                                    <!--<div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Understood</button>
-                                    </div>-->
+                                <img src="{{apost.image.url}}" alt="news " class="blog-post-thumbnail"  >
+                                <a href="{% url 'blog_detail' apost.pk%}" class="blog-post-link">
+                                <h5 class="blog-post-title" style="color: blue;">{{ apost.title }}</h5>
+                            </a>
+                                <p>{{apost.body | slice:":200" }}
+                                    <!--<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Link with href
+                                    </a>-->
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    {{apost.body }}
                                 </div>
                             </div>
-                        </div>
-                </div>
-            </section>
-            <footer>Live Resume @ <a href="https://www.bootstrapdash.com" target="_blank" rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
-        </main>
-  {% endblock %}
+
+                        
+                            <p class="blog-post-meta">
+                                <span class="post-published-date">{{ apost.created_on }}</span>
+                                <a href="#!" class="post-comments" data-toggle="modal" data-target="#staticBackdrop" >{{apost.comments.count}} COMMENTS</a>
+                                
+                            </p> 
+                        
+                        
+                        </article>
+                        {% endfor %}
+                        <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+                                aria-labelledby="staticBackdropLabel" aria-hidden="true" mr-2>
+                                <div class="modal-dialog modal-full-height modal-right modal-dialog-scrollable">
+                                    <div class="modal-content"> 
+                                    <div class="jumbotron card card-image">
+                                        <div class="modal-header">
+                                            
+                                            <h5 class="modal-title" id="staticBackdropLabel">Comments section</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        
+                                            {% for comment in comments %}
+                                            <p>
+                                            
+                                                <small>
+                                                    On {{comment.created_on.date }}&nbsp;
+                                                    <b>{{ comment.author }}</b> commented:
+                                                </small>
+                                            </p>
+                                            <p>{{ comment.body }}</p>
+                                            <hr>
+                                            {% endfor %}
+                                            </div>
+                                        </div>
+                                        <!--<div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+                <footer>Live Resume @ <a href="https://www.bootstrapdash.com" target="_blank" rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
+            </main>
+    {% endblock %}

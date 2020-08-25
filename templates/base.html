@@ -22,10 +22,15 @@
     
 
     <link rel="stylesheet" href="{% static 'assets/css/live-resume.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/toastr.css' %}">
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/toastr.min.js' %}"></script>
 </head>
 
 <body>
+    
     <header>
+      
         <!-- Button trigger modal-->
         <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto" data-toggle="modal" data-target="#modalSocial" ><img src="{% static 'assets/images/share.svg' %}"
                 alt="share" class="btn-img">
@@ -47,7 +52,7 @@
     <div class="content-wrapper">
         <aside>
             <div class="profile-img-wrapper">
-                <img src="{{b.profile.prof_image.url}}" class="rounded-circle" width="150", height="150" alt="profile">
+                <img src="{{b.profile.prof_image.url}}" class="rounded-circle" alt="profile">
             </div>
             <h1 class="profile-name">{{b.profile.name}}</h1>
             <div class="text-center">
@@ -97,15 +102,19 @@
                 </div>
             </div>
         </aside>
+      
     {% block content %}
+    
     {% endblock %}
     
     </div>
    
-<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+
 <script src="{% static 'assets/js/popper-base.min.js' %}"></script>
 <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
 <script src="{% static 'assets/js/live-resume.js' %}"></script>
+
+
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
