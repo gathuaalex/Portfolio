@@ -114,6 +114,7 @@ CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUD_NAME'),
     'API_KEY': config('API_KEY'),
     'API_SECRET': config('API_SECRET'),
+    'SECURE':config('SECURE',cast=bool),
     'STATICFILES_MANIFEST_ROOT': os.path.join(BASE_DIR, 'my-manifest-directory'),
 }
 
