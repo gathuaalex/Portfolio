@@ -14,7 +14,7 @@ class Profile(models.Model):
     phone_regex=RegexValidator(regex=r'^\+?1?\d{9,15}?$',message="phone number must be entered in the format:'+2547*******'")
     phone_number=models.CharField(validators=[phone_regex],max_length=14,blank=True)
     class Meta:
-       table_name="my_details"
+       db_table="my_details"
     
     
     def __str__(self):
