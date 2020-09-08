@@ -3,8 +3,16 @@ from django.core.validators import RegexValidator
 from cloudinary.models import CloudinaryField
 
 # Create your models here.
+class Profile_image(models.Model):
+    image=Cloudinary Field('image',null=True)
+    class Meta:
+       db_table="profile_photo"
 class Profile(models.Model):
-    prof_image = CloudinaryField('image', null=True)
+    prof_image= models.OneToOneField(
+        Profile_image,
+        on_delete=models.CASCADE,
+        primary_key=True,
+    )
     name=models.CharField(max_length=50)
     work=models.CharField(max_length=30)
     birthday=models.DateTimeField()
