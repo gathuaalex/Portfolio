@@ -4,7 +4,7 @@ from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class Profile_image(models.Model):
-    image=Cloudinary Field('image',null=True)
+    image=CloudinaryField('image',null=True)
     
 class Profile(models.Model):
     prof_image= models.OneToOneField(
