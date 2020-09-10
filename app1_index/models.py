@@ -5,8 +5,7 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 class Profile_image(models.Model):
     image=Cloudinary Field('image',null=True)
-    class Meta:
-       db_table="profile_photo"
+    
 class Profile(models.Model):
     prof_image= models.OneToOneField(
         Profile_image,
@@ -21,8 +20,6 @@ class Profile(models.Model):
     location=models.CharField(max_length=100)
     phone_regex=RegexValidator(regex=r'^\+?1?\d{9,15}?$',message="phone number must be entered in the format:'+2547*******'")
     phone_number=models.CharField(validators=[phone_regex],max_length=14,blank=True)
-    class Meta:
-       db_table="my_details"
     
     
     def __str__(self):
