@@ -3,12 +3,12 @@ from django.core.validators import RegexValidator
 from cloudinary.models import CloudinaryField
 
 # Create your models here.
-class Profile_image(models.Model):
+class ProfileImage(models.Model):
     image=CloudinaryField('image',null=True)
     
 class Profile(models.Model):
     prof_image= models.OneToOneField(
-        Profile_image,
+        ProfileImage,
         on_delete=models.CASCADE,
         primary_key=True,
     )
