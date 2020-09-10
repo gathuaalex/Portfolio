@@ -4,13 +4,13 @@ from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class ProfileImage(models.Model):
-    image=CloudinaryField('image',null=True)
+    myimage=CloudinaryField('image',null=True)
     
 class Profile(models.Model):
     prof_image= models.OneToOneField(
         ProfileImage,
         on_delete=models.CASCADE,
-        primary_key=True,
+       
     )
     name=models.CharField(max_length=50)
     work=models.CharField(max_length=30)
