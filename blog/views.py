@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import *
 from .forms import *
+
+
 # Create your views here.
 
 def blog_index(request):
@@ -26,28 +28,27 @@ def blog_category(request, category):
 
 
 def blog_detail(request, pk):
-    
     post = Post.objects.get(pk=pk)
     comments = Comment.objects.filter(post=post)
-    #comment posted
-    if request.method=="POST":
+    # comment posted
+    if request.method == "POST":
 
-       form_class=Commentform(request.POST)
+        form_class = Commentform(request.POST)
 
-       if form_class.is_valid(): 
-           #create commnt object but dont save to the database yet
-           new_c=form_class.save(commit=False)
-           #assign the current post to the comment
-           new_c.post=post
-           #save the comment to the database
-           new_c.save()
-           
+        if form_class.is_valid():
+            # create commnt object but dont save to the database yet
+            new_c = form_class.save(commit=False)
+            # assign the current post to the comment
+            new_c.post = post
+            # save the comment to the database
+            new_c.save()
+
     else:
-        form_class=Commentform()
+        form_class = Commentform()
     context = {
         "post": post,
         "comments": comments,
-        'form':form_class,
+        'form': form_class,
     }
 
     return render(request, "blog/blog_detail.html", context)
