@@ -15,7 +15,6 @@ def base():
     langs = Lang.objects.all()
     inter = Interests.objects.all()
     return {
-        'profile': prof,
         'langg': langs,
         'intrsts': inter,
         'profile': prof,
@@ -25,11 +24,7 @@ def base():
 def index(request):
     edu = Education.objects.all()
     exp = Experience.objects.all()
-    context = {
-        'education': edu,
-        'experience': exp,
-    }
-    context["b"] = base()
+    context = {'education': edu, 'experience': exp, "b": base()}
     return render(request, "resume/index.html", context)
 
 
@@ -37,20 +32,14 @@ def resm(request):
     edu = Education.objects.all()
     exp = Experience.objects.all()
     skl = Skill.objects.all()
-    context = {
-        'education': edu,
-        'experience': exp,
-        'skill': skl,
-    }
-    context["b"] = base()
+    context = {'education': edu, 'experience': exp, 'skill': skl, "b": base()}
     return render(request, "resume/resum.html", context)
 
 
 def portfolio(request):
     projects = MyInfo.objects.all()
 
-    context = {'obj': projects, }
-    context["b"] = base()
+    context = {'obj': projects, "b": base()}
     return render(request, "resume/portfolio.html", context)
 
 
@@ -58,8 +47,7 @@ def blog(request):
     pst = Post.objects.filter().order_by('-created_on')
     comm = Comment.objects.all()
 
-    context = {'posts': pst, 'comments': comm, }
-    context["b"] = base()
+    context = {'posts': pst, 'comments': comm, "b": base()}
     return render(request, "resume/blog.html", context)
 
 
