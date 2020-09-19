@@ -1,6 +1,7 @@
 *.pyc
 db.sqlite3
 env
+venv
 __pycache__
 local_settings.py
 folioenv

@@ -10,7 +10,7 @@ class ProfileImage(models.Model):
 
 class Profile(models.Model):
     prof_image = models.OneToOneField(
-        ProfileImage,
+        ProfileImage, null=True,
         on_delete=models.CASCADE,
 
     )
