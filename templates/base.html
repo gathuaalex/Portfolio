@@ -46,19 +46,21 @@
             <a href="{% url 'contactt' %}" class="nav-link">CONTACT</a>
         </nav>
         <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
-            data-target="collapsible-nav"><img src="{% static 'assets/images/hamburger.svg' %}" alt="hamburger"></button>
+            data-target="collapsible-nav"><img src="{% static 'assets/images/hamburger.svg' %}" alt="hamburger">
+        </button>
     </header>
      
     <div class="content-wrapper">
         <aside>
             <div class="profile-img-wrapper">
-                <img src="{{b.profile.prof_image.url}}" class="rounded-circle" alt="profile">
+                <img src="{{b.profile.prof_image.myimage.url}}" class="rounded-circle" alt="profile">
             </div>
             <h1 class="profile-name">{{b.profile.name}}</h1>
             <div class="text-center">
                 <span class="badge badge-red badge-pill profile-designation">
-                   <span style="color: black;">  {{b.profile.work}}
-                </span>
+                   <span style="color: black;">
+                       {{b.profile.work}}
+                    </span>
                 </span>
             </div>
             <nav class="social-links">
@@ -85,8 +87,9 @@
                     <div class="widget-content">
                         <h5 class="widget-title card-title">LANGUAGES</h5>
                         {% for lg in b.langg %}
-                        <p>{{lg.language_title}} : {{lg.language_status}}</p>
-                        
+                            <p>
+                                {{lg.language_title}} : {{lg.language_status}}
+                            </p>
                         {% endfor %}
                     </div>
                 </div>
@@ -96,7 +99,9 @@
                     <div class="widget-content">
                         <h5 class="widget-title card-title">INTERESTS</h5>
                         {% for intr in b.intrsts %}
-                        <p>{{intr.interst_title}}</p>
+                            <p>
+                                {{intr.interst_title}}
+                            </p>
                         {% endfor %}
                     </div>
                 </div>

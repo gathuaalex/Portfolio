@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, CreateView, ListView
-from folio.models import MyInfo
+from .models import MyInfo
 from .forms import ContactForm
 from app1_index.views import base
 
