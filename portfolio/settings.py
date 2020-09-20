@@ -96,9 +96,9 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ecommerce',
-        'USER': 'gathua',
-        'PASSWORD': 'gathua9122',
+        'NAME': config('NAME'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
         'HOST': 'localhost',
         'PORT': '',
 
@@ -156,4 +156,4 @@ MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
-#DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
