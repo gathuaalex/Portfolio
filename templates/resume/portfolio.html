@@ -9,6 +9,7 @@
                     {% for proj in obj %}
                         <figure class="portfolio-item hover-box">
                         <a href="{% url 'project_det'  pk=proj.id %}"> 
+                            
                                 <img src="{{ proj.image.url }}" alt="project" class="portfolio-item-img img-fluid z-depth-5 " >
                                 <figcaption class="portfolio-item-details overlay text-center">
                                     <h2 class="portfolio-item-title">Title :&nbsp;{{ proj.title }}</h2>

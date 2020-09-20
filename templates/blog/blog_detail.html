@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load widget_tweaks %}
+{% load cloudinary %}
 {% block content %}
 <main>
     <section class="blog-section">
@@ -7,7 +8,8 @@
             <div class="col-sm-7" >
                 <h1 class="section-title text-monospace text-center">{{ post.title }}</h1>
                 <div class="">
-                    <img src="{{post.image.url}}" alt="news " class="hover-box blog-post-thumbnail">
+                    {% cloudinary post.image width=600  %}
+                    
                     </br>
                     <small>
                         {{ post.created_on.date }} |&nbsp;

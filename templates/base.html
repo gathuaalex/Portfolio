@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load cloudinary %}
 <html lang="en">
 
 <head>
@@ -53,7 +54,10 @@
     <div class="content-wrapper">
         <aside class="overlay" id="hide">
             <div class="profile-img-wrapper">
-                <img src="{{b.profile.prof_image.myimage.url}}" class="rounded-circle" alt="profile">
+                <div class="rounded-circle">
+                    {% cloudinary b.profile.prof_image.myimage  width=300 height=300 crop="thumb" gravity="face"  radius=50  %}
+                </div>
+                
             </div>
             <h1 class="profile-name">{{b.profile.name}}</h1>
             <div class="text-center">

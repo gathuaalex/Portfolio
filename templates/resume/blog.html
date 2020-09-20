@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cloudinary %}
     {% block content %}
             <main>
                 <section class="blog-section">
@@ -11,7 +12,8 @@
                         <article class="blog-post container">    
  
                             <a href="{% url 'blog_detail' apost.id%}" class="blog-post-link">
-                            <img src="{{apost.image.url}}" alt="news " class="blog-post-thumbnail"  >
+                                {% cloudinary apost.image width=330  height=300 %}
+                            
                             <h5 class="blog-post-title" style="color: blue;">{{ apost.title }}</h5>
                             </a>
                                 <p>{{apost.body | slice:":150" }}...
