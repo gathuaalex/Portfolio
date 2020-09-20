@@ -18,10 +18,10 @@
                     </div>
                 </div>
 
-                <form action="{% url 'contactt' %}" class="contact-form" method="POST">
+                <form action="{% url 'contactt' %}" class="contact-form " method="POST">
                     {% csrf_token %}
                     
-                    <div class="form-group form-group-name">
+                    <div class="form-group form-group-name validate">
                         {% render_field form.name  class="form-control" id="name" placeholder="NAME" %}    
                     </div>
                     <div class="form-group form-group-email">
@@ -47,3 +47,6 @@
         </main>
     
 {% endblock %}
+{% block js %}
+{% include 'scripts.html' %}
+{% endblock js %}

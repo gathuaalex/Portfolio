@@ -1,23 +1,36 @@
 {% extends "base.html" %}
-{%load static%}
+
 
 {% block content%}
 <main>
 
-    <h1>{{obj.title}}</h1>
-<div class="row">
-    <div class="col-md-4 col-sm-6">
-        <img src="{{obj.image.url}}" class="img-fluid" height="450px" >
-    </div>
-    <br>
-    <div class="col-md-4">
-        <h5>About the project:</h5>
-        <p>{{obj.description}}</p>
-        <br>
-        <h5>Technology used:</h5>
-        <p>{{obj.technology}}</p>
-    </div>
+    <h1 class="text-center">{{obj.title}}</h1>
+    <hr class="badge-warning" width="600">
+<div class="mt-4 row">
+    <div class="col-sm-5  mt-3">
+        <img src="{{obj.image.url}}" class="img-fluid hoverable " height="" > 
 
+        <div class="mt-5 text-center">
+             <h5 class="text-info">Technology Used</h5>
+            <hr class="badge-success" width="300">
+            
+               
+                 <li>{{ obj.technology}}</li>
+                
+  
+        </div>
+       
+    </div>
+    
+
+    <div class=" ml-3 mt-3 col-sm-6">
+        <h5 class="text-center text-warning">About The Project</h5>
+        <p>{{obj.description | linebreaks}}</p>
+        <br>
+       
+    </div>
+   
+      
 </div>
     
 </main>
@@ -25,3 +38,10 @@
 
 
 {%endblock%}
+{%block js%}
+<script>
+    document.getElementById("hide").style.display = "none";
+
+
+</script>
+{%endblock js%}

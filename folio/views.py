@@ -6,12 +6,6 @@ from app1_index.views import base
 
 
 # Create your views here.
-def hello_world(request):
-    render(request, 'hello_world.html', {})
-
-
-class Classname(TemplateView):
-    template_name = 'hello_world.html'
 
 
 def Folio_index(request):

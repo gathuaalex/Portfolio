@@ -49,11 +49,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
+    'widget_tweaks',
+    'cloudinary',
     'folio',
     'blog',
     'app1_index',
-    'widget_tweaks',
-    'cloudinary',
+   
 ]
 
 MIDDLEWARE = [
@@ -95,9 +96,9 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('NAME'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
+        'NAME': 'ecommerce',
+        'USER': 'gathua',
+        'PASSWORD': 'gathua9122',
         'HOST': 'localhost',
         'PORT': '',
 
@@ -155,4 +156,4 @@ MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+#DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)

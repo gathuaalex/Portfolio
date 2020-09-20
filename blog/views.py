@@ -27,13 +27,13 @@ def blog_category(request, category):
     return render(request, "blog/blog_category.html", context)
 
 
-def blog_detail(request, pk):
-    post = Post.objects.get(pk=pk)
-    comments = Comment.objects.filter(post=post)
+def blog_detail(request, id):
+    post = Post.objects.get(id=id)
+    comments = Comment.objects.filter(post=post).order_by('-created_on')
     # comment posted
     if request.method == "POST":
 
-        form_class = Commentform(request.POST)
+        form_class = Commentform(request.POST or None)
 
         if form_class.is_valid():
             # create commnt object but dont save to the database yet
@@ -42,7 +42,7 @@ def blog_detail(request, pk):
             new_c.post = post
             # save the comment to the database
             new_c.save()
-
+        form_class = Commentform()
     else:
         form_class = Commentform()
     context = {

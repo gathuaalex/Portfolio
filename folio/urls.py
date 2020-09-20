@@ -5,8 +5,8 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    path('class/', Classname.as_view(), name='hello'),
-    path('cli/', views.Folio_index, name="project_index"),
+   
+   
     path('<int:pk>', views.F_details, name="project_det"),
 
 ]

@@ -1,0 +1,14 @@
+<script>
+    var viewportchange=window.matchMedia("(max-width: 700px)");
+
+    viewportchange.onchange = function (e) {
+            if (e.matches) {
+                /* the viewport is 600 pixels wide or less */
+               document.getElementById("hide").style.display = "none";
+            } else {
+                
+                document.getElementById("hide").style.display="inline"
+            }
+        }
+
+</script>

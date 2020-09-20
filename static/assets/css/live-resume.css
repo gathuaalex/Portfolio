@@ -67,7 +67,12 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible; }
+  
 
+
+.size1{
+border-top:0;
+}
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -102,6 +107,12 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0; }
+
+
+li::before{
+  content: ">";
+  color: green;
+}
 
 dt {
   font-weight: 700; }
@@ -471,6 +482,9 @@ pre {
   margin-left: auto; }
 
 @media (min-width: 576px) {
+  #hide{
+    display: none;
+  }
   .container, .container-sm {
     max-width: 540px; } }
 
@@ -3450,7 +3464,9 @@ input[type="button"].btn-block {
     color: #ffffff; }
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #ffffff; }
-
+.card-height{
+  height: 100%;
+}
 .card {
   position: relative;
   display: flex;
